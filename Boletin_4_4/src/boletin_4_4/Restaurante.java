@@ -1,23 +1,19 @@
 package boletin_4_4;
 
 public class Restaurante {
-    private int clientes; //Personas
-    private float polbo, patacas; //Kilos
+    private int clientes, polbo, patacas;
     
     public Restaurante(){
         clientes = polbo = patacas = 0;
        
     }
     
-    public int clienteStock(float polbo, float patacas){
-        this.polbo = polbo;
-        this.patacas = patacas;
-        
-        return (polbo * 3) / 2;
-        //Faltan patacas
+    public int clienteStock(int polbo, int patacas){
+        int total;
+        total = ((polbo + patacas) * 3) / 3;
+
+        return total;
         
     }
-    
-    
     
 }
